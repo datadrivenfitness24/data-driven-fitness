@@ -1,3 +1,4 @@
+import NotifyForm from "./NotifyForm";
 import styles from "./liftiq.module.css";
 
 export const metadata = {
@@ -15,32 +16,7 @@ export default function LiftIQ() {
           We're building LiftIQ right now. It's not ready to share details on yet —
           but if you want to know the moment it launches, leave your email below.
         </p>
-
-        <form
-          name="liftiq-notify"
-          method="POST"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-          className={styles.form}
-        >
-          <input type="hidden" name="form-name" value="liftiq-notify" />
-          <p className={styles.hidden}>
-            <label>
-              Don't fill this out if you're human: <input name="bot-field" />
-            </label>
-          </p>
-          <input
-            type="email"
-            name="email"
-            placeholder="you@example.com"
-            required
-            className={styles.emailInput}
-            aria-label="Email address"
-          />
-          <button type="submit" className="btn btn-invert">
-            Notify me
-          </button>
-        </form>
+        <NotifyForm />
       </div>
     </section>
   );

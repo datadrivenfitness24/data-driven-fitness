@@ -56,3 +56,16 @@
 .form button {
   align-self: flex-start;
 }
+
+.successMessage {
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px solid var(--navy-700);
+  color: var(--navy-950);
+  font-size: 1rem;
+}
+
+.errorMessage {
+  color: #a4453b;
+  font-size: 0.9rem;
+}

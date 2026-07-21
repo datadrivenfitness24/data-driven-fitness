@@ -42,3 +42,16 @@
   outline: 2px solid var(--white);
   outline-offset: 2px;
 }
+
+.successMessage {
+  margin-top: 40px;
+  color: var(--white);
+  font-size: 1.05rem;
+}
+
+.errorMessage {
+  margin-top: 12px;
+  width: 100%;
+  color: #e08b7d;
+  font-size: 0.9rem;
+}
