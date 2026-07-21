@@ -1,0 +1,70 @@
+.svg {
+  width: 100%;
+  height: auto;
+  max-width: 460px;
+}
+
+.line {
+  stroke-dasharray: 900;
+  stroke-dashoffset: 900;
+  animation: draw 1.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+.l1 {
+  animation-delay: 0.1s;
+}
+.l2 {
+  animation-delay: 0.5s;
+}
+.l3 {
+  animation-delay: 0.7s;
+}
+.l4 {
+  animation-delay: 0.9s;
+}
+
+.node {
+  opacity: 0;
+  transform-origin: center;
+  animation: pop 0.5s ease forwards;
+}
+
+.n1 { animation-delay: 0.1s; }
+.n2 { animation-delay: 0.85s; }
+.n3 { animation-delay: 1.3s; }
+.n4 { animation-delay: 1.6s; }
+.n5 { animation-delay: 1.3s; }
+.n6 { animation-delay: 0.85s; }
+.n7 { animation-delay: 0.5s; }
+.n8 { animation-delay: 0.7s; }
+.n9 { animation-delay: 1.55s; }
+.n10 { animation-delay: 0.75s; }
+.n11 { animation-delay: 1.55s; }
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .line {
+    stroke-dashoffset: 0;
+    animation: none;
+  }
+  .node {
+    opacity: 1;
+    animation: none;
+  }
+}

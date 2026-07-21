@@ -1,0 +1,62 @@
+.footer {
+  background: var(--navy-950);
+  color: var(--off-white);
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 48px;
+  padding: 72px 24px 48px;
+}
+
+.brand {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.tagline {
+  color: var(--navy-400);
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+
+.cols {
+  display: flex;
+  gap: 64px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.col a {
+  color: var(--navy-200);
+  transition: color 0.15s ease;
+}
+
+.col a:hover {
+  color: var(--white);
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 24px 32px;
+  border-top: var(--border-thin);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--navy-400);
+}
+
+@media (max-width: 560px) {
+  .bottom {
+    flex-direction: column;
+    gap: 6px;
+  }
+}

@@ -1,0 +1,128 @@
+.hero {
+  padding: 64px 0 96px;
+}
+
+.heroInner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.h1 {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  margin-top: 16px;
+}
+
+.heroCopy {
+  margin-top: 24px;
+  max-width: 46ch;
+  color: var(--navy-200);
+  font-size: 1.05rem;
+}
+
+.heroActions {
+  display: flex;
+  gap: 16px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.heroArt {
+  display: flex;
+  justify-content: center;
+}
+
+.h2 {
+  font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+  margin-top: 12px;
+}
+
+.h3 {
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  margin-top: 12px;
+}
+
+.bodyLg {
+  margin-top: 20px;
+  max-width: 52ch;
+  color: var(--navy-600);
+  font-size: 1.05rem;
+}
+
+.productSection {
+  border-top: var(--border-thin-dark);
+  padding-top: 64px;
+}
+
+.productSection .bodyLg {
+  margin-top: 16px;
+}
+
+.productSection .btn {
+  margin-top: 32px;
+}
+
+.blogTeaser {
+  border-top: var(--border-thin-dark);
+  padding-top: 64px;
+}
+
+.blogHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.viewAll {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--navy-700);
+  border-bottom: 1px solid var(--navy-700);
+}
+
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.blogCard {
+  display: block;
+  padding: 28px;
+  border: var(--border-thin-dark);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.blogCard:hover {
+  border-color: var(--navy-950);
+  transform: translateY(-2px);
+}
+
+.blogCard h3 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  margin-top: 10px;
+  color: var(--navy-950);
+}
+
+.blogCard p {
+  margin-top: 10px;
+  color: var(--navy-600);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 860px) {
+  .heroInner {
+    grid-template-columns: 1fr;
+  }
+  .heroArt {
+    order: -1;
+  }
+  .blogGrid {
+    grid-template-columns: 1fr;
+  }
+}

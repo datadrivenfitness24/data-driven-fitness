@@ -1,0 +1,23 @@
+.container {
+  max-width: 720px;
+}
+
+.back {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--navy-600);
+}
+
+.h1 {
+  font-size: clamp(1.8rem, 3.6vw, 2.6rem);
+  margin-top: 12px;
+}
+
+.body {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1.05rem;
+  color: var(--navy-800);
+}
